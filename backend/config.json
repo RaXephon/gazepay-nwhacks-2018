@@ -1,0 +1,27 @@
+{
+	"db": {
+		"url": "mongodb://localhost:27017/",
+		"name": "gazepay",
+		"user": "",
+		"password": ""
+	},
+	"storage": {
+		"image_folder": "/Users/taus/gaze/gazepay/data/images/",
+		"faces": "/Users/taus/gaze/gazepay/data/faces/",
+		"last": "/Users/taus/gaze/gazepay/data/last"
+	},
+	"base_url": "http://0.0.0.0:5000",
+	
+	"models": {
+		"face": {
+			"landmark": "models/landmark.dat",
+			"recognition": "models/facerec.dat"
+		}
+	},
+	"detection_params": {
+		"face": {
+			"threshold": 0.5,
+			"box_thickness": 3
+		}
+	}
+}
